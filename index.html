@@ -2,14 +2,115 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Мій перший сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Збірка анекдотів для блянди</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f0f2f5; padding-top: 50px; }
-        h1 { color: #333; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        /* Контейнер для карток */
+        .joke-container {
+            max-width: 600px;
+            width: 100%;
+        }
+        /* Стиль кожної картки з анекдотом */
+        .joke-card {
+            background: #ffffff;
+            border-left: 5px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .joke-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .joke-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #34495e;
+            white-space: pre-line; /* Зберігає перенесення рядків */
+        }
+        .joke-category {
+            display: inline-block;
+            background: #e8f4fd;
+            color: #3498db;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 4px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Привіт! Мій сайт працює через GitHub Pages 🚀</h1>
-    <p>Лабораторна робота виконана успішно.</p>
+
+    <header>
+        <h1>Топ 5 анекдотів </h1>
+        <p class="subtitle">Усмішка продовжує життя. Читайте та піднімайте настрій!</p>
+    </header>
+
+    <main class="joke-container">
+
+        <div class="joke-card">
+            <span class="joke-category">Анекдот №1</span>
+            <p class="joke-text">
+                Почалася бійка в дитячому будинку, вихователі питають Сашу:
+                - Саша, це все через тебе почалося?
+                Саша відповідає:
+                - Це не я! Мамою клянусь.
+            </p>
+        </div>
+
+        <div class="joke-card">
+            <span class="joke-category">🎓 Студентські</span>
+            <p class="joke-text">
+                Професор на іспиті:
+                — Чому ви так сильно хвилюєтесь? Боїтеся моїх запитань?
+                — Ні, професоре, я боюся своїх відповідей...
+            </p>
+        </div>
+
+        <div class="joke-card">
+            <span class="joke-category">📈 Життєві</span>
+            <p class="joke-text">
+                — Мій будильник грає чудову мелодію — спів пташок, шум лісу, легкий вітерець...
+                — І як, допомагає прокинутися?
+                — Ні, навпаки. Мені здається, що я помер і потрапив у рай, тому я сплю далі з чистою совістю.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Створено з легкістю на GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
